@@ -1,0 +1,44 @@
+digraph GOT {
+	graph [ bgcolor = whitesmoke ]
+		subgraph cluster_baratheon {
+			style = filled ;
+			color = chocolate3 ;
+			label = " House Baratheon " ;
+			node [ style = filled , color = white ];
+			Ormund ; Steffon ; Robert ; Stannis ; Renly ; Shireen ; Joffrey ; Myrcellar ; Tommen ;
+			Ormund -> Steffon ;
+			Rhaelle -> Steffon ;
+			Ormund -> Rhaelle ;
+			Steffon -> Robert ;
+			Steffon -> Stannis ;
+			Steffon -> Renly ;
+			Stannis -> Shireen ;
+			Robert -> Joffrey ;
+			Robert -> Myrcellar ;
+			Robert -> Tommen ;
+		}
+		subgraph cluster_lannister {
+			style = filled ;
+			color = cornsilk3 ;
+			label = " House Lannister " ;
+			node [ style = filled , color = white ];
+			Tywin ; Joanna ; Jaime ; Cersei ; Tyrion ;
+			Joanna -> Jaime ;
+			Joanna -> Cersei ;
+			Joanna -> Tyrion ;
+			Tywin -> Jaime ;
+			Tywin -> Cersei ;
+			Tywin -> Tyrion ;
+			Cersei -> Joffrey ;
+			Cersei -> Myrcellar ;
+			Cersei -> Tommen ;
+			Jaime -> Joffrey [ style = dashed ];
+			Jaime -> Myrcellar [ style = dashed ];
+			Jaime -> Tommen [ style = dashed ];
+		}
+		labelloc = " t " ;
+		fontsize =50;
+		fontcolor = lightslategrey ;
+		fontname = " Bookman Old Style Bold Italic " ;
+		label = " Game of Thrones Family Tree "
+	} 
