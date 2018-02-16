@@ -56,7 +56,7 @@ public class LeastCommonAncestor {
 	}
 	public static void main(String args[]){
         
-		String fileName = "/home/atul/JGRAPHT/demo.dot";
+		String fileName = "/home/atul/JGRAPHT/demo4.dot";
 		String person1 = args[0];
 		String person2 = args[1];
 		Set<String>graphAns = allLcas(fileName, person1 , person2);
